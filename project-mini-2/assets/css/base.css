@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --color-one: #8261EE;
+    --color-two: #FF589E;
+    --color-text: #1e1e1e;
+    --font: 'DM Sans', sans-serif;
+}
+
+body {
+    color: var(--color-text);
+    line-height: 1.6;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-two);
+}
+
+/* button */
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 45px;
+    background: #fff;
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight:500;
+    transition: all 0.3s ease 0s;
+}
+.button-two{
+    background:var(--color-two);
+    color:#fff;
+    margin-bottom:50px;
+}
+.button-two:hover{
+    background:var(--color-one);
+    color:#fff;
+    transition: all 0.3s ease 0s;
+}
+.button-one{
+    background:var(--color-one);
+    color:#fff;
+}
+.button-one:hover{
+    background:var(--color-two);
+    color:#fff;
+    transition: all 0.3s ease 0s;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #ccc;
+    border-radius: 999px;
+    padding: 2px 6px;       
+    max-width: 220px;
+    height: 32px;            
+    background-color: #fff;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 4px 6px;         
+    height: 100%;             
+    flex: 1;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    height: 100%;             
+}
+
+.search-box i {
+    font-size: 18px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.search-box button:hover i {
+    color: #000;
+}
+
+/* end-button */
