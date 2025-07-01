@@ -35,5 +35,16 @@
       document.body.classList.remove("shake");
     }, 3000);
   });
+const facts = [
+  "💡 Đại ca code ngày 25 tiếng, ngủ 1 tiếng còn lại để đợi build xong!",
+  "🧠 Người bình thường debug 1 lỗi. Đại ca tạo ra 10 lỗi để test cùng lúc!",
+  "🔥 Đừng hỏi đại ca dùng framework gì, vì chính đại ca là framework!",
+];
+
+document.getElementById("cvBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  const random = facts[Math.floor(Math.random() * facts.length)];
+  alert(random);
+});
 
   };
